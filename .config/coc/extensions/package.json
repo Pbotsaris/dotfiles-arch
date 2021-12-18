@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "coc-eslint": ">=1.4.5",
+    "coc-solargraph": ">=1.2.2",
+    "coc-svelte": ">=0.4.1",
+    "coc-tsserver": ">=1.8.6"
+  }
+}

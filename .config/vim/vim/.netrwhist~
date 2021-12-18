@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/pedro/dev/courses/elixir/gnome-course/dictonary'
+let g:netrw_dirhist_8='/Users/pedro/dev/courses/elixir/gnome-course/dictonary/lib'
+let g:netrw_dirhist_7='/Users/pedro/dev/courses/elixir/gnome-course/dictonary'
+let g:netrw_dirhist_6='/Users/pedro/dev/courses/elixir/gnome-course/dictonary/lib/dictonary'
+let g:netrw_dirhist_5='/Users/pedro/dev/courses/elixir/gnome-course/dictonary/lib'
+let g:netrw_dirhist_4='/Users/pedro/dev/courses/elixir/gnome-course/dictonary'
+let g:netrw_dirhist_3='/Users/pedro/dev/courses/elixir/gnome-course/dictonary/lib'
+let g:netrw_dirhist_2='/Users/pedro/dev/courses/elixir/gnome-course/dictonary'
+let g:netrw_dirhist_1='/Users/pedro/dev/courses/elixir/gnome-course/dictonary/assets'
+let g:netrw_dirhist_0='/Users/pedro/dev/courses/elixir/gnome-course/dictonary'
