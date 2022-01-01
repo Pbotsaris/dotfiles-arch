@@ -8,4 +8,6 @@ let g:LanguageClient_serverCommands = {
 "nnoremap <silent> gD :call LanguageClient#textDocument_definition()<CR>
 "nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
+"let g:vimrubocop_config = '~/rubocop.yml'
+
 autocmd FileType ruby setlocal omnifunc=LanguageClient#complete

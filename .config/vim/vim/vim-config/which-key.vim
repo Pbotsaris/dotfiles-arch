@@ -36,7 +36,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 
 let g:which_key_map['m'] = [ ':MixFormat'						  		 , 'Format Elixir' ]
-let g:which_key_map['r'] = [ ':RustFmt'						  			 , 'Format Rust' ]
+let g:which_key_map['R'] = [ ':RustFmt'						  			 , 'Format Rust' ]
 let g:which_key_map['t'] = [ ':TlistOpen'							   	 , 'Open Tag List' ]
 let g:which_key_map['M'] = [ '<Plug>MarkSet'					     , 'Variable Highlight' ]
 let g:which_key_map['C'] = [ '<Plug>MarkClear'						 ,'Clear Variable Highlight' ]
@@ -54,6 +54,7 @@ let g:which_key_map['bw'] = [ ':bw'                	 		   , 'Buffer Wipeout']
 let g:which_key_map['w'] = [ ':w'                     	 	 , 'Save' ]
 let g:which_key_map['`'] = [ '<C-w>w'                 		 , 'Next Window' ]
 let g:which_key_map['W'] = [ ':w!'                      	 , 'Save All' ]
+let g:which_key_map['r'] = [ ':RuboCop --auto-correct $1 '  , 'Auto correct with Rubocop' ]
 
 " c is for CoC 
 let g:which_key_map.c = {
