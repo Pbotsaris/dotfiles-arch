@@ -132,6 +132,10 @@ _fix_cursor(){
 precmd_functions+=(_fix_cursot)
 
 
+# set dotbare(dotfiles) to custom folder.
+export DOTBARE_DIR="$HOME/.dotfiles"
+
+
 PATH=$PATH:$HOME/.config/scripts/
 # for whatever reason I nbeed to export these locale
 export LC_CTYPE=en_US.UTF-8
@@ -157,7 +161,7 @@ export LC_ALL=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-#
+
  alias shell-config="vim ~/.config/zsh/.zshrc"
  alias i3-config="vim ~/.config/i3/config"
  alias term-config="vim ~/.config/alacritty/alacritty.yml"
