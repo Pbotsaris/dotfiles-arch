@@ -1,0 +1,17 @@
+Host personal
+		HostName 167.99.213.19 
+		IdentityFile /Users/pedro/.ssh/id_rsa 
+
+Host *
+		AddKeysToAgent yes
+		UseKeychain yes
+		IdentityFile ~/.ssh/id_rsa
+
+# user: pb / pb@antegration
+Host antegrations
+		HostName 188.166.91.160
+		IdentityFile /Users/pedro/.ssh/id_rsa 
+
+Host git.us.qwasar.io
+  User git
+	IdentityFile ~/.ssh/qwasar_key_priv
