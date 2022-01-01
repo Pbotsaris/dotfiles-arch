@@ -1,4 +1,27 @@
 .dotfiles
 .config/vim/vim/plugged
-
+.config/1Password
+.config/autorandr
+.config/BraveSoftware
+.config/chromium
+.config/code-oss
+.config/Code - OSS'
+.config/dconf
+.config/Electron
+.config/fontconfig
+.config/google-chrome
+.config/google-chrome-beta
+.config/google-chrome-unstable
+.config/microsoft-edge-dev
+.config/mimeapps.list
+.config/.org.chromium.Chromium.D2bnh7
+.config/.org.chromium.Chromium.vsuztu
+.config/pavucontrol.ini
+.config/pulse
+.config/Slack
+.config/Thunar
+.config/vivaldi
+.config/vivaldi-snapshot
+.config/xfce4
+.config/yay
 
