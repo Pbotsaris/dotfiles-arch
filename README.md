@@ -23,8 +23,6 @@ or
 
 launch config `i3-config`
 
-### walpaper manager: nitrogen
-
 ### terminal: Alacritty
 
 launch config `term-config`
@@ -36,20 +34,28 @@ more [here](https://github.com/davatorium/rofi)
 
 ### bar: polybar
 
-there  `forest` 
+theme  `forest` 
+
 launch config `bar-config`
 
 ### screenshots: flameshot.
 
 launch GUI `ss-gui`
+
 screen shot from CLI: `ss`
 
 ### Others
 
 window system: x
+
 composition: picom
+
 font: Inconsolata Nerd Font Mono 
+
 file manager: thunar via xfce4
+
+walpaper manager: nitrogen
+
 autojump with `j`
 
 ## Shell
