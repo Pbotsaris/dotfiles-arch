@@ -51,7 +51,7 @@ terminal: `vifm`
 
 ### Login manager: lighdm
 
-using `lighdm-mini-greeter` and `gruvbox` theme. more [here]()
+using `lighdm-mini-greeter` and `gruvbox` theme. more on config [here](https://github.com/Pbotsaris/dotfiles-arch/tree/main/.config/lighdm)
 
 ### composition: picom
 
