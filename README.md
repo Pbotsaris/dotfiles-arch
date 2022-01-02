@@ -49,6 +49,10 @@ screen shot from CLI: `ss`
 GUI: thunar via xfce4
 terminal: `vifm`
 
+### Login manager: lighdm
+
+using `lighdm-mini-greeter` and `gruvbox` theme. more [here]()
+
 ### composition: picom
 
 config in `./config/picom/picom.conf`
