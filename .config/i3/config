@@ -20,16 +20,13 @@ font pango: SauceCodePro Nerd Font 14
 floating_modifier $mod
 
 # Start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # Kill focused window
 bindsym $mod+Shift+q kill
 
-# Start rofi
-bindsym $mod+d exec rofi -show drun -columns 3
-
-# dmenu
-#bindsym $mod+d exec dmenu_run
+# Start rofi (seach apps menu)
+bindsym $mod+d exec --no-startup-id rofi -show drun -columns 3
 
 # Move between windows
 bindsym $mod+j focus left
@@ -223,14 +220,18 @@ client.background       #282828
 #}
 
 # Startup programs
+exec_always --no-startup-id ~/.scripts/monitors.sh
+#exec_always --no-startup-id ~/.scripts/wallpapers.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
+# change apslock to esc on boot
+
 # background color
 exec --no-startup-id xsetroot -solid "#333333"
-exec_always --no-startup-id ~/.scripts/monitors.sh
-exec_always --no-startup-id ~/.scripts/wallpapers.sh
-exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
-exec_awalys --no-startup-id ~/.config/scripts/caps_as_esc.sh
+exec --no-startup-id ~/.config/scripts/caps_as_esc.sh
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
+# restore wallpaper with nitrogen
+exec --no-startup-id nitrogen --restore &
 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id notify-send "Welcome back $USER!" -i ~/.images/icons8-dog-100.png

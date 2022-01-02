@@ -137,7 +137,7 @@ export DOTBARE_DIR="$HOME/.dotfiles"
 
 
 PATH=$PATH:$HOME/.config/scripts/
-# for whatever reason I nbeed to export these locale
+# for whatever reason I need to export these locale
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
@@ -172,7 +172,9 @@ export LC_ALL=en_US.UTF-8
  alias cpy="~/.config/scripts/clip.sh"
  alias ss="flameshot full -c -p ~/screen_shots"
  alias ss-gui="flameshot gui -p ~/screen_shots"
+ alias cae="caps_as_esc.sh"
  alias config=dotbare
+ alias connect-bluetooth="connect-bluetooth.sh"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
