@@ -229,7 +229,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
 exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id ~/.config/scripts/caps_as_esc.sh
 exec --no-startup-id betterlockscreen -w dim
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 # restore wallpaper with nitrogen
 exec --no-startup-id nitrogen --restore &
 

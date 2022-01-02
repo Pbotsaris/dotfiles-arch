@@ -44,15 +44,20 @@ launch GUI `ss-gui`
 
 screen shot from CLI: `ss`
 
+### file manager:
+
+GUI: thunar via xfce4
+terminal: `vifm`
+
+### composition: picom
+
+config in `./config/picom/picom.conf`
+
 ### Others
 
 window system: x
 
-composition: picom
-
 font: Inconsolata Nerd Font Mono 
-
-file manager: thunar via xfce4
 
 walpaper manager: nitrogen
 
