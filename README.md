@@ -38,13 +38,13 @@ theme  `forest`
 
 launch config `bar-config`
 
-### screenshots: flameshot.
+### screenshots: flameshot
 
 launch GUI `ss-gui`
 
 screen shot from CLI: `ss`
 
-### file manager:
+### file manager
 
 GUI: thunar via xfce4
 terminal: `vifm`
@@ -86,7 +86,3 @@ A custom bin folder is exported to `$PATH ` from `~/.config/scripts`.
 `shel-config` launches `zshrc`
 `vim-config` launches vim config folder
 `src` source ``zshrc
-
-
-
-
