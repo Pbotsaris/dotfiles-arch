@@ -1,0 +1,63 @@
+{
+  "solargraph.diagnostics": true,
+  "solargraph,autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.hover": true,
+  "diagnostic.checkCurrentLine": true,
+  "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "elm",
+    "javascriptreact",
+    "css",
+    "Markdown"
+  ],
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+  "languageserver": {
+
+    "lua": {
+      "command": "/home/pedro/.lua-ls/lua-language-server/bin/lua-language-server",
+      "args": ["-E", "/home/pedro/.lua-ls/lua-language-server/bin/main.lua"],
+      "rootPatterns": [".git"],
+      "filetypes": ["lua"],
+			"settings": {
+        "Lua": {
+          "workspace.library": {
+            "/usr/share/nvim/runtime/lua": true,
+            "/usr/share/nvim/runtime/lua/vim": true,
+            "/usr/share/nvim/runtime/lua/vim/lsp": true
+          },
+          "diagnostics": {
+            "globals": [ "vim" ]
+          }  
+        }
+      }
+    },
+		 "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  },
+  "python.linting.pylintEnabled": false,
+  "python.linting.pep8Enabled": true,
+  "python.linting.enabled": true,
+  "diagnostic.messageTarget": "echo",
+  "signature.target": "echo",
+  "javascript.suggestionActions.enabled": false,
+  "typescript.suggestionActions.enabled": false,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "svelte.enable-ts-plugin": true
+}
