@@ -4,7 +4,8 @@ Host personal
 
 Host *
 		AddKeysToAgent yes
-		UseKeychain yes
+    IgnoreUnknown UseKeychain
+    UseKeychain yes
 		IdentityFile ~/.ssh/id_rsa
 
 # user: pb / pb@antegration

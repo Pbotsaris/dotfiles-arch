@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+
 "THEME
 
 Plug 'morhetz/gruvbox'
@@ -60,7 +61,6 @@ Plug 'vim-scripts/c.vim'
 
 "PYTHON
 Plug 'psf/black', { 'branch': 'stable' }
-
 
 "JS & HTML
 Plug 'mattn/emmet-vim'

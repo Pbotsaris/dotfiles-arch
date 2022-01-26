@@ -14,7 +14,7 @@ set $mod Mod4
 new_window pixel
 
 # Font for window titles.
-font pango: SauceCodePro Nerd Font 14
+font pango: SauceCodePro Nerd Font 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -168,12 +168,12 @@ mode "resize"
 bindsym $mod+r mode resize
 bindsym $mod+Shift+e exec "~/.config/i3blocks/blocks/shutdown_menu/shutdown_menu"
 
-# class                 border  bground text    indicator child_border
-client.focused          #FABD2F #d79921 #282828 #FABD2F   #FABD2F  
-client.unfocused        #282A36 #282828 #ebdbb2 #282828   #282A36
-client.urgent           #44475A #282828 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282828 #F8F8F2 #282A36   #282A36
-client.background       #282828
+# class                 border  bground text     indicator child_border
+client.focused          #282A36 #9ccfd8 #282828  #569FBA   #9ccfd8
+client.unfocused        #282A36 #1a1d24 #b9bfca  #569FBA   #282A36
+client.urgent           #44475A #1a1d24 #b9bfca  #FF5555   #FF5555
+client.placeholder      #282A36 #1a1d24 #b9bfca  #282A36   #282A36
+client.background       #1a1d24
 
 # Start i3blocks to display a workspace bar
 #bar {

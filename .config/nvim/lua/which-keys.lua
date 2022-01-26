@@ -11,7 +11,7 @@ wk.register({
   ["."] = {'<Plug>(coc-codeaction)', 'show code actions'},
 	rn = {'<Plug>(coc-rename)', 'rename'},
 	l = {':CocCommand eslint.executeAutofix<CR>', 'eslint'},
-	p = {':CocCommand prettier.formatFile<CR>', 'pretier'},
+	p = {':CocCommand prettier.formatFile<CR>', 'prettier'},
 	f = {"<cmd>lua require('telescope.builtin').find_files()<CR>", 'Telescope files'},
 	s = {"<cmd>lua require('telescope.builtin').git_files()<CR>", "Telescope Git Files"},
 	z = {"<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", 'telescope worktree'},

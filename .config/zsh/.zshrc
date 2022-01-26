@@ -94,7 +94,6 @@ SAVEHIST=1000
 unsetopt autocd beep
 bindkey -v
 
-
 # Prompt zshell
 
 # CHANGE CURSOR IN VI MODE
@@ -141,6 +140,10 @@ PATH=$PATH:$HOME/.config/scripts/
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+#fly.io
+export FLYCTL_INSTALL="/home/pedro/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -166,16 +169,20 @@ export LC_ALL=en_US.UTF-8
  alias i3-config="vim ~/.config/i3/config"
  alias term-config="vim ~/.config/alacritty/alacritty.yml"
  alias vim-config="vim ~/.config/vim/.vim"
+ alias nvim-config="cd ~/.config/nvim; nvim init.lua"
  alias bar-config="vim ~/.config/polybar/forest"
  alias git-config="vim ~/.config/git/.gitconfig"
- alias src="source .config/zsh/.zshrc"
+ alias src="source ~/.config/zsh/.zshrc"
  alias cpy="~/.config/scripts/clip.sh"
  alias ss="flameshot full -c -p ~/screen_shots"
  alias ss-gui="flameshot gui -p ~/screen_shots"
  alias cae="caps_as_esc.sh"
  alias config=dotbare
  alias connect-bluetooth="connect-bluetooth.sh"
+ alias vim="nvim"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
+alias luamake=/home/pedro/.lua-ls/lua-language-server/3rd/luamake/luamake
