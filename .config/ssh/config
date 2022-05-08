@@ -1,17 +1,20 @@
-Host personal
-		HostName 167.99.213.19 
-		IdentityFile /Users/pedro/.ssh/id_rsa 
-
 Host *
 		AddKeysToAgent yes
     IgnoreUnknown UseKeychain
     UseKeychain yes
 		IdentityFile ~/.ssh/id_rsa
 
+Host labs.antfood.com
+    HostName 206.189.0.154
+		IdentityFile ~/.ssh/id_rsa
+    User pb
+
+
 # user: pb / pb@antegration
-Host antegrations
+Host antegrations.com
 		HostName 188.166.91.160
-		IdentityFile /Users/pedro/.ssh/id_rsa 
+		IdentityFile ~/.ssh/id_rsa
+     User pb
 
 Host git.us.qwasar.io
   User git
