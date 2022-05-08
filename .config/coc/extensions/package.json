@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "coc-elixir": ">=0.7.0",
+    "coc-emmet": ">=1.1.6",
     "coc-eslint": ">=1.5.2",
+    "coc-go": ">=1.1.0",
     "coc-lua": ">=1.0.1",
     "coc-prettier": ">=1.1.24",
     "coc-python": ">=1.2.13",
