@@ -1,6 +1,7 @@
 require('packer').startup {
   function(use)
 		use 'wbthomason/packer.nvim'
+    use 'ray-x/go.nvim'
     use 'sainnhe/gruvbox-material'
     use 'nvim-treesitter/nvim-treesitter'
     use {'neoclide/coc.nvim', branch = 'release'}
@@ -37,6 +38,8 @@ require('theme')
 require('lualine-config')
 require('telescope-config')
 require('treesitter-config')
+require('go').setup()
+
 
 require('nvim-autopairs').setup{}
 

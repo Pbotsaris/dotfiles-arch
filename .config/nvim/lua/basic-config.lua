@@ -38,9 +38,11 @@ set tags=tags
 set visualbell
 set backup
 set backupdir=~/.vim/.backup//
-set backupcopy=yes
 au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
+set backupcopy=yes
 set undodir=~/.vim/.undo//
+autocmd BufWritePre *.go :silent! lua require('go.format').gofmt()
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 ]])
 
 
