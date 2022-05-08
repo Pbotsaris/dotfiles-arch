@@ -35,7 +35,7 @@
 [color]
 	ui = true
 [core]
-	editor = vim
+	editor = nvim
 
 # This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
 [include]
