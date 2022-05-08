@@ -22,17 +22,23 @@ floating_modifier $mod
 # Start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 
+
+# Network configuration
+
+bindsym $mod+n exec --no-startup-id networkmanager_dmenu
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
 # Start rofi (seach apps menu)
-bindsym $mod+d exec --no-startup-id rofi -show drun -columns 3
+bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -columns 3
+bindsym $mod+f exec --no-startup-id rofi -show filebrowser -columns 3
 
 # Move between windows
-bindsym $mod+j focus left
+bindsym $mod+h focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+j focus up
+bindsym $mod+l focus right
 
 # Alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -53,7 +59,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Split in horizontal orientation
-bindsym $mod+h split h;exec notify-send 'Title Horizontal'
+bindsym $mod+Shift+h split h;exec notify-send 'Title Horizontal'
 
 # Split in vertical orientation
 bindsym $mod+v split v;exec notify-send 'Title Vertical'
@@ -62,7 +68,7 @@ bindsym $mod+v split v;exec notify-send 'Title Vertical'
 bindsym $mod+space split toggle
 
 # Enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -169,7 +175,7 @@ bindsym $mod+r mode resize
 bindsym $mod+Shift+e exec "~/.config/i3blocks/blocks/shutdown_menu/shutdown_menu"
 
 # class                 border  bground text     indicator child_border
-client.focused          #282A36 #9ccfd8 #282828  #569FBA   #9ccfd8
+client.focused          #282A36 #9ccfd8 #282828  #a3be8c   #9ccfd8
 client.unfocused        #282A36 #1a1d24 #b9bfca  #569FBA   #282A36
 client.urgent           #44475A #1a1d24 #b9bfca  #FF5555   #FF5555
 client.placeholder      #282A36 #1a1d24 #b9bfca  #282A36   #282A36
@@ -211,7 +217,7 @@ client.background       #1a1d24
 #        statusline #F8F8F2
 #        separator  #44475A
 #
-#        focused_workspace  #44475A #44475A #F8F8F2
+#        focused_workspace  #44475A #44475A #a3be8c
 #        active_workspace   #282A36 #44475A #F8F8F2
 #        inactive_workspace #282A36 #282A36 #BFBFBF
 #        urgent_workspace   #FF5555 #FF5555 #F8F8F2
