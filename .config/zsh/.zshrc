@@ -144,6 +144,9 @@ export LC_ALL=en_US.UTF-8
 export FLYCTL_INSTALL="/home/pedro/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
+# go
+export PATH=$PATH:/usr/local/go/bin
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -155,6 +158,10 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 # else
 #   export EDITOR='mvim'
 # fi
+#
+
+# NVM
+source /usr/share/nvm/init-nvm.sh  
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -168,10 +175,12 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
  alias shell-config="vim ~/.config/zsh/.zshrc"
  alias i3-config="vim ~/.config/i3/config"
  alias term-config="vim ~/.config/alacritty/alacritty.yml"
+ alias picom-config="nvim ~/.config/picom/picom.conf"
  alias vim-config="vim ~/.config/vim/.vim"
  alias nvim-config="cd ~/.config/nvim; nvim init.lua"
  alias bar-config="vim ~/.config/polybar/forest"
  alias git-config="vim ~/.config/git/.gitconfig"
+ alias rofi-config="nvim ~/.config/rofi/config.rasi"
  alias src="source ~/.config/zsh/.zshrc"
  alias cpy="~/.config/scripts/clip.sh"
  alias ss="flameshot full -c -p ~/screen_shots"
@@ -180,6 +189,7 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
  alias config=dotbare
  alias connect-bluetooth="connect-bluetooth.sh"
  alias vim="nvim"
+ alias a="cat ~/.config/zsh/.zshrc | grep alias"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
