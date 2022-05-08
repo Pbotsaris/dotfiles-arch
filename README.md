@@ -2,7 +2,6 @@
 
 This dotfiles is built using [dotbare](https://github.com/kazhala/dotbare). Dotbare is aliased `config` per this `.zshrc`. Configurations can be added and commited using git commands including alias commands in `gitconfig`.
 
-
     config add -A
 
 or
@@ -15,6 +14,16 @@ or
 or
 
     config c "commit message"
+
+
+Do not use `config add -A` as this command will add every single file in your home directory.  Ideally files and directories should be carefully added individually
+
+    config add ~/.config/zsh/.zshrc
+
+
+Or adding only modified/deleted files that are already being tracked 
+
+    config add -u
 
 
 # System
@@ -89,4 +98,4 @@ A custom bin folder is exported to `$PATH ` from `~/.config/scripts`.
 `git-config` launches `gitconfig`
 `shel-config` launches `zshrc`
 `vim-config` launches vim config folder
-`src` source ``zshrc
+`src` to  `source zshrc`
