@@ -1,15 +1,19 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+ # Path to your oh-my-zsh installation.
 export ZSH="/home/pedro/.oh-my-zsh"
+ZSH_THEME=""
 export EDITOR=vim
+fpath+=$HOME/.config/zsh/pure
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="itchy"
+#ZSH_THEME="itchy"
+
+# zstyle :prompt:pure:path color white
 
 # FAV
 # kolo itchy
@@ -80,11 +84,15 @@ ZSH_THEME="itchy"
 plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions autojump dotbare)
 source $ZSH/oh-my-zsh.sh
 
+autoload -U promptinit; promptinit
+zstyle ':prompt:pure:prompt:*' color '#998a96'
+prompt pure
+
+
 
 # USER CONFIG
 
 ## add gem bins to $PATH
-
 export PATH="/home/pedro/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 ## Lines configured by zsh-newuser-install
