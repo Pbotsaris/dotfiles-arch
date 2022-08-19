@@ -1,31 +1,40 @@
-local wk = require("which-key")
+local status_ok, wk = pcall(require, "which-key")
+if not status_ok then
+  return
+end
 
- wk.setup {
-  spelling = {enabled = true},
-  window = {border = 'single'}
+wk.setup {
+  spelling = { enabled = true, suggestions = 20 },
+  window = { border = 'single' },
+  hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
+  show_help = true, -- show help message on the command line when the popup is visible
+  triggers = "auto", -- automatically setup triggers
+}
+
+local opts = {
+  mode = "n",
+  prefix = "<leader>",
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true,
+  noremap = true,
+  nowait = true,
 }
 
 wk.register({
-  w = {'<cmd>w!<cr>', 'save file'},
-  q = {'<cmd>q!<cr>', 'quit'},
-  ["."] = {'<Plug>(coc-codeaction)', 'show code actions'},
-	rn = {'<Plug>(coc-rename)', 'rename'},
-	l = {':CocCommand eslint.executeAutofix<CR>', 'eslint'},
-	p = {':CocCommand prettier.formatFile<CR>', 'prettier'},
-	f = {"<cmd>lua require('telescope.builtin').find_files()<CR>", 'Telescope files'},
-	s = {"<cmd>lua require('telescope.builtin').git_files()<CR>", "Telescope Git Files"},
-	z = {"<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", 'telescope worktree'},
-	g = {"<cmd>lua require('telescope.builtin').live_grep()<CR>", "telescope grep"},
-	b = {"<cmd>lua require('telescope.builtin').buffers()<CR>", "Telescope buffers"},
-	n = {":Lexplore<CR> :vertical resize 30<CR>", 'Open explorer'},
-	t = {":sp<CR> :term<CR> :resize 20N<CR> i", 'Open terminal'},
-	v = {":vs<CR>", 'Vertical split'},
-	h = {":sp<CR>", 'Horizontal split'}
- }
-, { prefix = "<leader>" })
-
-
-
-
-
-
+  w = { '<cmd>w!<cr>', 'save file' },
+  q = { '<cmd>q!<cr>', 'quit' },
+  p = { ':Prettier', 'Prettier' },
+  f = { "<cmd>lua require('telescope.builtin').find_files()<CR>", 'Telescope files' },
+  s = { "<cmd>lua require('telescope.builtin').git_files()<CR>", "Telescope Git Files" },
+  g = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "telescope grep" },
+  b = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "Telescope buffers" },
+  k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
+  ['+'] = { ':resize .(winheight(0) * 3/2)<CR>', 'resize +' },
+  ['-'] = { ':resize .(winheight(0) * 2/3)<CR>', 'reseize -' },
+  n = { ":NvimTreeToggle<CR>", 'Open explorer' },
+  t = { ":sp<CR> :term<CR> :resize 20N<CR> i", 'Open terminal' },
+  h = { ":sp<CR>", 'Horizontal split' },
+  v = { ":vs<CR>", 'Vertical split' },
+  m = { "<cmd>lua vim.lsp.buf.formatting_sync()<CR>", "Format"}
+}
+  , opts)

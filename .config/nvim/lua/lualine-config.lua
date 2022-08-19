@@ -1,16 +1,16 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'nightfox',
+    theme = 'duskfox',
     component_separators = { left = '|', right = '|'},
-    section_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
     disabled_filetypes = {},
     always_divide_middle = false,
   },
   sections = {
-    lualine_a = {'mode'},
-	  lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
+    lualine_a = {{'mode', padding = 2}},
+	  lualine_b = {{'branch', 'diff', 'diagnostics', padding = 2}},
+    lualine_c = {{'filename', padding = 2}},
     lualine_x = {'encoding', '', 'filetype'},
     lualine_y = {},
     lualine_z = {'location'}
@@ -26,4 +26,3 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
-
