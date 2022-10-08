@@ -235,7 +235,6 @@ _comps=(
 'curl' '_curl'
 'cut' '_cut'
 'cvs' '_cvs'
-'d' '_dirs'
 'dad' '_dad'
 'darcs' '_darcs'
 'dash' '_sh'
@@ -415,7 +414,6 @@ _comps=(
 'gbasename' '_basename'
 'gcat' '_cat'
 'gcc' '_gcc'
-'gccd' '_git'
 'gccgo' '_go'
 'gchgrp' '_chown'
 'gchmod' '_chmod'
@@ -432,9 +430,7 @@ _comps=(
 'gdd' '_dd'
 'gdf' '_df'
 'gdiff' '_diff'
-'gdnolock' '_git'
 'gdu' '_du'
-'gdv' '_git'
 'geany' '_geany'
 'gegrep' '_grep'
 'gem' '_gem'
@@ -457,13 +453,7 @@ _comps=(
 'gfmt' '_fmt'
 'gfold' '_fold'
 'ggetopt' '_getopt'
-'ggf' '_git'
-'ggfl' '_git'
-'ggl' '_git'
-'ggp' '_git'
-'ggpnp' '_git'
 'ggrep' '_grep'
-'ggu' '_git'
 'ggv' '_gnome-gv'
 'ghc' '_ghc'
 'ghci' '_ghc'
@@ -479,7 +469,6 @@ _comps=(
 'git-flow' '_git-flow'
 'git-journal' '_git-journal'
 'gitk' '_git'
-'_git_log_prettily' '_git'
 'git-pulls' '_git-pulls'
 'git-receive-pack' '_git'
 'git-revise' '_git-revise'
@@ -939,7 +928,7 @@ _comps=(
 'ntalk' '_other_accounts'
 'numfmt' '_numfmt'
 'nvim' '_vim'
-'nvm' '_bash_complete -o default -F __nvm'
+'nvm' '_nvm'
 'objdump' '_objdump'
 'od' '_od'
 'ogg123' '_vorbis'
@@ -948,7 +937,6 @@ _comps=(
 'ogginfo' '_vorbis'
 'oksh' '_sh'
 'okular' '_okular'
-'omz' '_omz'
 'openssl' '_openssl'
 'openstack' '_openstack'
 'opera' '_webbrowser'
@@ -1681,18 +1669,8 @@ _comps=(
 
 _services=(
 'bzcat' 'bunzip2'
-'gccd' 'git-clone'
 'gchgrp' 'chgrp'
 'gchown' 'chown'
-'gdnolock' 'git-diff'
-'gdv' 'git-diff'
-'ggf' 'git-checkout'
-'ggfl' 'git-checkout'
-'ggl' 'git-checkout'
-'ggp' 'git-checkout'
-'ggpnp' 'git-checkout'
-'ggu' 'git-checkout'
-'_git_log_prettily' 'git-log'
 'gnupod_addsong.pl' 'gnupod_addsong'
 'gnupod_check.pl' 'gnupod_check'
 'gnupod_INIT.pl' 'gnupod_INIT'
@@ -1997,5 +1975,5 @@ autoload -Uz +X _call_program
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: e9e8c6b54d594109041bdd4bc3902b40f9ae8849
-#omz fpath: /home/pedro/.oh-my-zsh/custom/plugins/dotbare /home/pedro/.oh-my-zsh/plugins/autojump /home/pedro/.oh-my-zsh/custom/plugins/zsh-autosuggestions /home/pedro/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/pedro/.oh-my-zsh/plugins/archlinux /home/pedro/.oh-my-zsh/plugins/git /home/pedro/.oh-my-zsh/functions /home/pedro/.oh-my-zsh/completions /home/pedro/.oh-my-zsh/cache/completions /home/pedro/.oh-my-zsh/custom/plugins/dotbare /home/pedro/.oh-my-zsh/plugins/autojump /home/pedro/.oh-my-zsh/custom/plugins/zsh-autosuggestions /home/pedro/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/pedro/.oh-my-zsh/plugins/archlinux /home/pedro/.oh-my-zsh/plugins/git /home/pedro/.oh-my-zsh/functions /home/pedro/.oh-my-zsh/completions /home/pedro/.oh-my-zsh/cache/completions /home/pedro/.oh-my-zsh/custom/plugins/dotbare /home/pedro/.oh-my-zsh/plugins/autojump /home/pedro/.oh-my-zsh/custom/plugins/zsh-autosuggestions /home/pedro/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/pedro/.oh-my-zsh/plugins/archlinux /home/pedro/.oh-my-zsh/plugins/git /home/pedro/.oh-my-zsh/functions /home/pedro/.oh-my-zsh/completions /home/pedro/.oh-my-zsh/cache/completions /home/pedro/.oh-my-zsh/custom/plugins/dotbare /home/pedro/.oh-my-zsh/plugins/autojump /home/pedro/.oh-my-zsh/custom/plugins/zsh-autosuggestions /home/pedro/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/pedro/.oh-my-zsh/plugins/archlinux /home/pedro/.oh-my-zsh/plugins/git /home/pedro/.oh-my-zsh/functions /home/pedro/.oh-my-zsh/completions /home/pedro/.oh-my-zsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/functions/Calendar /usr/share/zsh/functions/Chpwd /usr/share/zsh/functions/Completion /usr/share/zsh/functions/Completion/Base /usr/share/zsh/functions/Completion/Linux /usr/share/zsh/functions/Completion/Unix /usr/share/zsh/functions/Completion/X /usr/share/zsh/functions/Completion/Zsh /usr/share/zsh/functions/Exceptions /usr/share/zsh/functions/Math /usr/share/zsh/functions/MIME /usr/share/zsh/functions/Misc /usr/share/zsh/functions/Newuser /usr/share/zsh/functions/Prompts /usr/share/zsh/functions/TCP /usr/share/zsh/functions/VCS_Info /usr/share/zsh/functions/VCS_Info/Backends /usr/share/zsh/functions/Zftp /usr/share/zsh/functions/Zle /home/pedro/.config/zsh/pure /home/pedro/.config/zsh/pure /home/pedro/.config/zsh/pure /home/pedro/.config/zsh/pure
+#omz revision: 50550c70eaa36e79fdf380bdc4ddad4a1ad581a0
+#omz fpath: /home/pedro/.oh-my-zsh/custom/plugins/dotbare /home/pedro/.oh-my-zsh/plugins/autojump /home/pedro/.oh-my-zsh/custom/plugins/zsh-autosuggestions /home/pedro/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /home/pedro/.oh-my-zsh/plugins/archlinux /home/pedro/.oh-my-zsh/plugins/git /home/pedro/.oh-my-zsh/functions /home/pedro/.oh-my-zsh/completions /home/pedro/.oh-my-zsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/functions/Calendar /usr/share/zsh/functions/Chpwd /usr/share/zsh/functions/Completion /usr/share/zsh/functions/Completion/Base /usr/share/zsh/functions/Completion/Linux /usr/share/zsh/functions/Completion/Unix /usr/share/zsh/functions/Completion/X /usr/share/zsh/functions/Completion/Zsh /usr/share/zsh/functions/Exceptions /usr/share/zsh/functions/Math /usr/share/zsh/functions/MIME /usr/share/zsh/functions/Misc /usr/share/zsh/functions/Newuser /usr/share/zsh/functions/Prompts /usr/share/zsh/functions/TCP /usr/share/zsh/functions/VCS_Info /usr/share/zsh/functions/VCS_Info/Backends /usr/share/zsh/functions/Zftp /usr/share/zsh/functions/Zle /home/pedro/.config/zsh/pure

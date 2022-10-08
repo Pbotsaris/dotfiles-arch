@@ -133,7 +133,7 @@ entry {
 }
 prompt {
     spacing:    0;
-    text-color: @nomal-foreground;
+    text-color: @normal-foreground;
 }
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];

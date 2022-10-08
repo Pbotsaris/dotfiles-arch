@@ -1,5 +1,5 @@
 vim.o.background = "dark"
-vim.cmd("colorscheme duskfox")
+vim.cmd("colorscheme terafox")
 
 --require('nightfox').setup({
 -- -- fox = "nightfox", -- Which fox style should be applied

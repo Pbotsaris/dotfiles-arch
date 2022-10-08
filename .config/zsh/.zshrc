@@ -7,6 +7,8 @@ ZSH_THEME=""
 export EDITOR=vim
 fpath+=$HOME/.config/zsh/pure
 
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -154,6 +156,10 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 # go
 export PATH=$PATH:/usr/local/go/bin
+
+# pip installed 
+
+export PATH=$PATH:$HOME/.local/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

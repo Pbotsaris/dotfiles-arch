@@ -1,4 +1,4 @@
-eslint.executeAutofix
 editor.action.organizeImport
+eslint.executeAutofix
 prettier.formatFile
 eslint.showOutputChannel
