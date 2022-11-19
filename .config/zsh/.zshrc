@@ -154,8 +154,8 @@ export LC_ALL=en_US.UTF-8
 export FLYCTL_INSTALL="/home/pedro/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
-# go
-export PATH=$PATH:/usr/local/go/bin
+export GOBIN="$HOME/go/bin"
+export PATH="$GOBIN:$PATH"
 
 # pip installed 
 

@@ -35,6 +35,6 @@ wk.register({
   t = { ":sp<CR> :term<CR> :resize 20N<CR> i", 'Open terminal' },
   h = { ":sp<CR>", 'Horizontal split' },
   v = { ":vs<CR>", 'Vertical split' },
-  m = { "<cmd>lua vim.lsp.buf.formatting_sync()<CR>", "Format"}
+  m = { "<cmd>lua vim.lsp.buf.format()<CR>", "Format"}
 }
   , opts)
