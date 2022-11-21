@@ -36,8 +36,7 @@ return packer.startup {
 
     --  User interface
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
-    use {
-      'kyazdani42/nvim-tree.lua',
+    use { 'kyazdani42/nvim-tree.lua',
       requires = {
         'kyazdani42/nvim-web-devicons', -- optional, for file icons
       },
@@ -68,9 +67,9 @@ return packer.startup {
     -- language specific
     use 'ray-x/go.nvim'
     use 'pangloss/vim-javascript'
+    use 'mhinz/vim-mix-format'
     use 'evanleck/vim-svelte'
     use 'elixir-editors/vim-elixir'
-    use 'mhinz/vim-mix-format'
     use {'prettier/vim-prettier', ['do'] = 'yarn install --frozen-lockfile --production',
    ['for'] = {'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'}
    }
